@@ -1,1 +1,71 @@
+/* Móvil */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5efe6;
+    color: #3e2723;
+}
+
+.hero {
+    background-color: #4e342e;
+    color: #fff;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.productos {
+    padding: 20px;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #4e342e;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tableta */
+@media (min-width: 600px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Escritorio */
+@media (min-width: 900px) {
+    .grid-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
